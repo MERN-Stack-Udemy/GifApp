@@ -4,11 +4,6 @@ import { AddCategorie } from './components/AddCategorie';
 const GifExpertApp = () => {
 
   const [categories, setCategories] = useState(['One Punch', 'Samurai X', 'Dragon Ball'])
-
-  const handleAdd = (e) => {
-    // setCategories([ ...categories, 'X-Man' ]);
-    setCategories( cat => [...cat, 'X-Man' ]);
-  }
   
   return (
     <>
@@ -19,14 +14,12 @@ const GifExpertApp = () => {
 
       <hr/>
 
-      <ol>
-        {
-          categories.map( ( categorie ) => {
-            return <li key={categorie}> {categorie}</li>
-          })
-        }
-      </ol>
-
+      <ol>{
+        categories.map( ( categorie ) => {
+          return <li key={categorie}> {categorie}</li>
+        })
+      }</ol>
+      
     </>
   )
 
