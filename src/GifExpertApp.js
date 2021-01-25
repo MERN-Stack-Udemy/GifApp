@@ -21,7 +21,7 @@ const GifExpertApp = () => {
           <GifsGrid 
             key={categorie}
             // class
-            categorie = { categorie }
+            category= { categorie }
           />
         ))
       }</ol>
