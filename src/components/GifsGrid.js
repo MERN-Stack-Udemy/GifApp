@@ -6,7 +6,7 @@ import { GifsGridItem } from './GifsGridItem';
 export const GifsGrid = ({ category }) => {
 
   const {data, loading} = useFetchGifs(category);
-
+  console.log({data, loading})
   return (
     <>
       <h3  className= "animate__jello">{category}</h3>

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test about GifsGridItem test snapshot of GifsGritItem 1`] = `
+<div
+  className="card animate__bounceIn"
+>
+  <img
+    alt="test demo"
+    src="holamundo"
+  />
+  <p>
+    test demo
+  </p>
+</div>
+`;
