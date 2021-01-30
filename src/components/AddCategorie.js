@@ -8,7 +8,6 @@ export const AddCategorie = ( {setCategories} ) => {
 
   const handleChange = (e) => {
     setInputvalue(e.target.value);
-    console.log(e)
   };
 
   const handleSubmit = (e) => {
