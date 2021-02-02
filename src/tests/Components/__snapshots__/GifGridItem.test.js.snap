@@ -5,11 +5,11 @@ exports[`Test about GifsGridItem test snapshot of GifsGritItem 1`] = `
   className="card animate__bounceIn"
 >
   <img
-    alt="test demo"
-    src="holamundo"
+    alt="rick y morty"
+    src="https://api.giphy.com/seach?rick+y+morty.jpg"
   />
   <p>
-    test demo
+    rick y morty
   </p>
 </div>
 `;

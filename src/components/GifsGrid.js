@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 import { useFetchGifs } from '../Hooks/useFetchGifs'
 import { GifsGridItem } from './GifsGridItem';
@@ -6,7 +7,7 @@ import { GifsGridItem } from './GifsGridItem';
 export const GifsGrid = ({ category }) => {
 
   const {data, loading} = useFetchGifs(category);
-  console.log({data, loading})
+  // console.log({data, loading})
   return (
     <>
       <h3  className= "animate__jello">{category}</h3>
@@ -22,4 +23,8 @@ export const GifsGrid = ({ category }) => {
       </div>
     </>
   )
+}
+
+GifsGrid.propTypes = {
+  category : PropTypes.string.isRequired,
 }
